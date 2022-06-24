@@ -34,3 +34,6 @@ yarn build
 yarn preview
 ```
 # hydrogen-shop-test
+
+Note to self to start the project:
+`npm run dev`
