@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import FeaturedCollections from "../components/FeaturedCollections.server";
 import { Layout } from "../components/Layout.server";
 
@@ -5,7 +7,9 @@ export default function Home() {
   return (
 
     <Layout>
-      <FeaturedCollections />
+      <Suspense>
+        <FeaturedCollections />
+      </Suspense>
     </Layout>
     // <section className="p-6 md:p-8 lg:p-12">
     //   <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">Hello World!</h1>
